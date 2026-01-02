@@ -1,4 +1,4 @@
-# Alvalens Porto 2
+# John Maliwa Porto 2
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=aleph-discord-bot.visitor-badge)
 
@@ -24,12 +24,12 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 2. Clone the repository:
 
    ```shell
-   git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
+   git clone https://github.com/John Maliwa/John Maliwa-porto-2-nextJs.git
    ```
 3. Navigate to the project directory:
 
    ```shell
-   cd Alvalens-porto-2-nextJs
+   cd John Maliwa-porto-2-nextJs
    ```
 4. Install dependencies:
 
