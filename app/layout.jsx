@@ -5,59 +5,60 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
-import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
+import FloatingContactButton from "@/components/FloatingContactButton";
 
 export const metadata = {
-    title: "John Maliwa | Portofolio",
-
+  title: "John Maliwa | Web Developer & Tech Enthusiast",
+  description:
+    "Hi, I'm John Maliwa, a web developer and tech enthusiast from Tanzania. I build websites, apps, and digital solutions, while studying Industrial Engineering at the University of Dar es Salaam.",
+  author: "John Maliwa",
+  siteUrl: "https://www.johnmaliwa.my.id",
+  applicationName: "John Maliwa Portfolio",
+  keywords: [
+    "John Maliwa",
+    "web developer Tanzania",
+    "industrial engineering student",
+    "JavaScript",
+    "Next.js",
+    "React",
+    "web development portfolio",
+    "tech enthusiast",
+    "disihub",
+    "smartstoo",
+    "ezymarket",
+  ],
+  openGraph: {
+    type: "website",
+    url: "https://www.jm.disihub.site",
+    title: "John Maliwa | Web Developer & Tech Enthusiast",
+    site_name: "John Maliwa Portfolio",
     description:
-		"My name is John Maliwa, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
-
-    author: "Alvalen Shafelbilyunazra",
-    siteUrl: "https://www.John Maliwa.my.id",
-    applicationName: "John Maliwa",
-
-    keywords: [
-		"John Maliwa",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
-	],
-
-    openGraph: {
-		type: "website",
-		url: "https://www.John Maliwa.my.id",
-		title: "John Maliwa | Portofolio",
-		site_name: "John Maliwa | Portofolio",
-		description: "My name is John Maliwa, This is my portofolio website.",
-		width: 1200,
-		height: 630,
-		images: [
-			{
-				url: "/og-image-rev.png",
-				alt: "John Maliwa Portofolio",
-			},
-		],
-		site_name: "John Maliwa | Portofolio",
-	}
+      "Portfolio of John Maliwa – web developer and tech enthusiast from Tanzania, showcasing projects, apps, and skills.",
+    width: 1200,
+    height: 630,
+    images: [
+      {
+        url: "/og-image-rev.png",
+        alt: "John Maliwa Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
-	return (
-		<html lang="en">
-			<body>
-				<ClientTopProgressBar />
-				<Navbar />
-				{children}
-				<Chat />
-				<Analytics />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body>
+        <ClientTopProgressBar />
+        <Navbar />
+        {children}
+
+        {/* Floating contact button visible on all pages */}
+        <FloatingContactButton />
+
+        <Analytics />
+      </body>
+    </html>
+  );
 }
